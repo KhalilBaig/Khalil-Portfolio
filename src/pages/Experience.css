@@ -1,0 +1,138 @@
+.experience-page {
+  padding-top: 6rem;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.exp-timeline-card {
+  padding: 2.5rem;
+  position: relative;
+}
+
+.exp-badge-type {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  background: rgba(124, 58, 237, 0.15);
+  color: var(--color-primary-light);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 1px solid rgba(124, 58, 237, 0.3);
+}
+
+.exp-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.exp-role-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.company-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-secondary);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.exp-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.icon-sm {
+  color: var(--color-primary-light);
+}
+
+.exp-description {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.highlights-heading {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.highlights-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+}
+
+.highlights-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+
+}
+
+.hl-check {
+  color: var(--color-success);
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+
+.exp-tech-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.exp-tools-icon {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .exp-badge-type {
+    position: static;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  .exp-timeline-card {
+    padding: 1.5rem;
+  }
+  .exp-card-header {
+    flex-direction: column;
+  }
+}

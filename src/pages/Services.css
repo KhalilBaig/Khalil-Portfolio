@@ -1,0 +1,131 @@
+.services-page {
+  padding-top: 6rem;
+}
+
+.all-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.service-detail-card {
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.service-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: rgba(124, 58, 237, 0.12);
+  color: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.service-number {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--border-color-hover);
+}
+
+.service-detail-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.deliverables-title {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.deliverables-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+}
+
+.deliverables-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.d-icon {
+  color: var(--color-success);
+  font-size: 0.9rem;
+
+}
+
+.service-cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary-light);
+  transition: gap var(--transition-fast);
+}
+
+.service-cta-link:hover {
+  gap: 0.75rem;
+  color: var(--color-primary);
+}
+
+.services-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  gap: 2rem;
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.15) 0%, rgba(124, 58, 237, 0.15) 100%);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+}
+
+.services-banner h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.services-banner p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+@media (max-width: 992px) {
+  .all-services-grid {
+    grid-template-columns: 1fr;
+  }
+  .services-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

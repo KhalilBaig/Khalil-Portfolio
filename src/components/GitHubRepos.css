@@ -1,0 +1,136 @@
+.github-repos-widget {
+  margin-top: 3rem;
+}
+
+.github-widget-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.github-icon-lg {
+  font-size: 2.2rem;
+  color: var(--color-primary-light);
+}
+
+.github-widget-header h3 {
+  font-size: 1.5rem;
+}
+
+.github-widget-header .subtitle {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.repos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.repo-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.repo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.repo-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+.repo-link-icon {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.repo-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.repo-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  margin-top: auto;
+}
+
+.repo-lang-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.lang-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.repo-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Skeleton Loading */
+.skeleton-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.skeleton-line {
+  background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-card-hover) 50%, var(--bg-card) 75%);
+  background-size: 200% 100%;
+  animation: skeletonLoading 1.5s infinite;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.75rem;
+}
+
+.title-sk {
+  height: 20px;
+  width: 70%;
+}
+
+.desc-sk {
+  height: 14px;
+  width: 90%;
+}
+
+@keyframes skeletonLoading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

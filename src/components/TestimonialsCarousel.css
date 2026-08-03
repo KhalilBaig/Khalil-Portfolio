@@ -1,0 +1,125 @@
+.testimonials-widget {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-card {
+  position: relative;
+  padding: 3rem 2.5rem 2rem 2.5rem;
+  text-align: center;
+}
+
+.quote-icon {
+  font-size: 3rem;
+  color: var(--color-primary-glow);
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  opacity: 0.4;
+}
+
+.rating-stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-bottom: 1.25rem;
+}
+
+.star-icon {
+  color: var(--color-accent);
+  font-size: 1.1rem;
+}
+
+.testimonial-text {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--text-primary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.author-avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-primary);
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.15rem;
+}
+
+.author-role {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.carousel-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.carousel-arrow:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary-light);
+  transform: scale(1.05);
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border-color);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.dot.active {
+  width: 20px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+}
+
+@media (max-width: 576px) {
+  .carousel-card {
+    padding: 2rem 1.25rem;
+  }
+  .testimonial-text {
+    font-size: 1rem;
+  }
+}

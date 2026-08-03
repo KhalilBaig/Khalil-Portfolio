@@ -1,0 +1,129 @@
+.skills-page {
+  padding-top: 6rem;
+}
+
+.skills-category-block {
+  margin-bottom: 4rem;
+}
+
+.category-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.cat-header-icon {
+  color: var(--color-primary-light);
+}
+
+.cat-header-icon.teal {
+  color: var(--color-secondary);
+}
+
+.cat-header-icon.amber {
+  color: var(--color-accent);
+}
+
+.ai-intro-text {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  padding: 1.5rem;
+}
+
+.skill-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.skill-level {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.skill-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--bg-main);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.skill-progress-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+}
+
+.fill-violet {
+  background: linear-gradient(90deg, #7C3AED 0%, #9333EA 100%);
+  box-shadow: 0 0 10px var(--color-primary-glow);
+}
+
+.fill-teal {
+  background: linear-gradient(90deg, #14B8A6 0%, #2DD4BF 100%);
+  box-shadow: 0 0 10px var(--color-secondary-glow);
+}
+
+.fill-amber {
+  background: linear-gradient(90deg, #F59E0B 0%, #FBBF24 100%);
+}
+
+.clean-code-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2.5rem;
+  margin-top: 3rem;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.12) 0%, rgba(20, 184, 166, 0.12) 100%);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+}
+
+.banner-icon {
+  font-size: 2.2rem;
+  color: var(--color-accent);
+  margin-top: 0.2rem;
+}
+
+.clean-code-banner h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.clean-code-banner p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .clean-code-banner {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}

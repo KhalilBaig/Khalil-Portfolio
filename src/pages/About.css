@@ -1,0 +1,270 @@
+.about-page {
+  padding-top: 6rem;
+}
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.about-image-card {
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 280px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  margin-bottom: 1.5rem;
+}
+
+.about-photo-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.about-photo-info p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.resume-btn-small {
+  width: 100%;
+  font-size: 0.85rem;
+}
+
+.about-story-card {
+  padding: 2.5rem;
+}
+
+.story-title {
+  font-size: 1.85rem;
+  margin-bottom: 1.25rem;
+  color: var(--text-primary);
+}
+
+.story-paragraph {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.story-highlights-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.hl-icon {
+  color: var(--color-primary-light);
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.highlight-item strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.highlight-item span {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* Core Values Grid */
+.core-values-container {
+  margin-bottom: 5rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.value-card {
+  padding: 2rem;
+  position: relative;
+}
+
+.value-number {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-primary-glow);
+  margin-bottom: 0.5rem;
+}
+
+.value-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.value-card p {
+  color: var(--text-secondary);
+  font-size: 0.925rem;
+  line-height: 1.6;
+}
+
+/* Education & Certifications Grid */
+.education-cert-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.edu-col, .cert-col {
+  padding: 2.5rem;
+}
+
+.sub-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.4rem;
+  margin-bottom: 1.75rem;
+}
+
+.heading-icon {
+  color: var(--color-primary);
+}
+
+.timeline-item {
+  border-left: 2px solid var(--color-primary);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+}
+
+.timeline-date {
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+}
+
+.timeline-item h4 {
+  font-size: 1.15rem;
+  margin: 0.35rem 0;
+}
+
+.timeline-institution {
+  color: var(--color-primary-light);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-desc {
+  color: var(--text-secondary);
+  font-size: 0.925rem;
+  line-height: 1.5;
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.cert-star {
+  color: var(--color-accent);
+  font-size: 1.35rem;
+  margin-top: 0.15rem;
+}
+
+.cert-item h4 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.cert-item p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+/* Fun Facts */
+.fun-facts-container {
+  padding: 2.5rem;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.fact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.fact-heart {
+  color: var(--color-danger);
+  font-size: 1.2rem;
+}
+
+.fact-item p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .education-cert-grid {
+    grid-template-columns: 1fr;
+  }
+  .story-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}
